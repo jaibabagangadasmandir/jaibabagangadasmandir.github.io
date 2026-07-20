@@ -431,6 +431,7 @@ footer p{
 }
 
 /* ---------- Desktop ---------- */
+/* ---------- Desktop ---------- */
 
 @media (min-width:769px){
 
@@ -442,4 +443,48 @@ footer p{
         display:flex !important;
     }
 
+}
+
+/* ===== Hero Slider ===== */
+
+.slider{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    opacity:0;
+    transition:opacity 1s ease-in-out;
+}
+
+.slide.active{
+    opacity:1;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+    z-index:1;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
 }
