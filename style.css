@@ -16,15 +16,17 @@ body{
 
 /* ===== Navbar ===== */
 
-header{
+   header{
     position:fixed;
     top:0;
     left:0;
     width:100%;
+    background:rgba(139,0,0,0.90);
+    backdrop-filter:blur(10px);
     z-index:1000;
-    background:#8B0000;
     box-shadow:0 2px 10px rgba(0,0,0,.2);
 }
+
 
 .navbar{
    .navbar{
