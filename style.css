@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff8ef;
+    color:#333;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#ff8c00;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    z-index:1000;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+.logo{
+    font-size:26px;
+    font-weight:700;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("images/home.jpg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-text h1{
+    font-size:55px;
+}
+
+.hero-text h3{
+    margin-top:15px;
+    font-size:28px;
+}
+
+.hero-text p{
+    margin-top:10px;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#ff9800;
+    color:white;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:90px 10%;
+}
+
+section h2{
+    text-align:center;
+    color:#ff6f00;
+    margin-bottom:35px;
+    font-size:36px;
+}
+
+#about img{
+    width:300px;
+    display:block;
+    margin:auto;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+}
+
+#about p,
+#history p{
+    margin-top:25px;
+    text-align:center;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+#contact{
+    text-align:center;
+    background:#fff0d6;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+padding:15px;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+margin:8px;
+display:inline-block;
+}
+
+.hero-text h1{
+font-size:34px;
+}
+
+.hero-text h3{
+font-size:22px;
+}
+
+.hero-text p{
+font-size:18px;
+}
+
+}
