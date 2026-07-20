@@ -488,3 +488,36 @@ footer p{
     color:white;
     text-align:center;
 }
+/* ===== Events ===== */
+
+.events{
+    background:#fff8ef;
+}
+
+.event-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.event-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.event-card:hover{
+    transform:translateY(-8px);
+}
+
+.event-card h3{
+    color:#8B0000;
+    margin-bottom:15px;
+}
+
+.event-card p{
+    margin:8px 0;
+}
