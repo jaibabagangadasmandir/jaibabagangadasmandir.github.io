@@ -278,7 +278,7 @@ h2{
 /* Mobile Menu */
 
 .menu-toggle{
-    display:none;
+    display:block;
     font-size:30px;
     color:white;
     cursor:pointer;
