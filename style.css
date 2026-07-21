@@ -2319,3 +2319,208 @@ height:65px;
 }
 
 }
+/*=========================================
+        PREMIUM HERO EFFECT V7
+=========================================*/
+
+/* Golden Title */
+
+.hero-right h1{
+
+font-size:90px;
+
+font-weight:800;
+
+line-height:1.05;
+
+background:linear-gradient(180deg,#fff7c2,#ffd54f,#ff9800);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+text-shadow:0 8px 25px rgba(0,0,0,.45);
+
+letter-spacing:2px;
+
+animation:titleGlow 3s ease-in-out infinite;
+
+}
+
+@keyframes titleGlow{
+
+0%,100%{
+
+filter:drop-shadow(0 0 6px rgba(255,193,7,.35));
+
+}
+
+50%{
+
+filter:drop-shadow(0 0 18px rgba(255,193,7,.75));
+
+}
+
+}
+
+/* Subtitle */
+
+.hero-subtitle{
+
+background:rgba(255,152,0,.20);
+
+border:2px solid rgba(255,215,64,.60);
+
+backdrop-filter:blur(8px);
+
+color:#fff8dc;
+
+}
+
+/* Welcome Text */
+
+.hero-right p{
+
+font-size:30px;
+
+font-weight:500;
+
+color:#ffffff;
+
+text-shadow:0 3px 12px rgba(0,0,0,.5);
+
+}
+
+/* Buttons */
+
+.hero-btn{
+
+background:linear-gradient(45deg,#ff9800,#ff6f00);
+
+box-shadow:0 12px 30px rgba(255,152,0,.35);
+
+}
+
+.hero-btn:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 20px 40px rgba(255,152,0,.45);
+
+}
+
+.hero-outline{
+
+background:rgba(255,255,255,.08);
+
+border:2px solid #ffffff;
+
+backdrop-filter:blur(8px);
+
+}
+
+/* Baba Image */
+
+.hero-left img{
+
+border:8px solid rgba(255,255,255,.25);
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.50),
+0 0 40px rgba(255,193,7,.30);
+
+}
+
+/* Floating Glow */
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:550px;
+
+height:550px;
+
+border-radius:50%;
+
+background:rgba(255,193,7,.15);
+
+top:-180px;
+
+right:-120px;
+
+filter:blur(90px);
+
+z-index:0;
+
+}
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+width:420px;
+
+height:420px;
+
+border-radius:50%;
+
+background:rgba(255,87,34,.15);
+
+bottom:-120px;
+
+left:-120px;
+
+filter:blur(90px);
+
+z-index:0;
+
+}
+
+/* Hero Strip */
+
+.hero-strip{
+
+margin-top:-65px;
+
+}
+
+.strip-box{
+
+border-top:5px solid #ff9800;
+
+}
+
+.strip-box:hover{
+
+background:#fff8ef;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero-right h1{
+
+font-size:48px;
+
+}
+
+.hero-right p{
+
+font-size:20px;
+
+}
+
+.hero-left img{
+
+max-width:320px;
+
+}
+
+}
